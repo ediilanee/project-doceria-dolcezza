@@ -10,6 +10,8 @@ import Pagbolos from './pages/pagbolos.jsx';
 import Pagcupcakes from './pages/pagcupcakes.jsx';
 import Pagtrufas from './pages/pagtrufas.jsx';
 import Pagbeantobar from './pages/pagbeantobar.jsx'
+import Efeitohover from './pages/efeitohover.jsx';
+import Cadastro from './pages/fazerpedidos.jsx';
 
 
 
@@ -27,6 +29,8 @@ function App() {
             <Route path="/cupcakes" element={<Pagcupcakes />} />
             <Route path="/trufas" element={<Pagtrufas />} />
             <Route path="/beantobar" element={<Pagbeantobar />} />
+            <Route path='/efeito' element={<Efeitohover />} />
+            <Route path='/pedidos' element={<Cadastro />} />
         </Routes>
       </Router>  
     </div>
