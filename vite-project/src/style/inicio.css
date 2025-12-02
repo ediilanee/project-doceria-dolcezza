@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+.conteiner-inicio {
+  
+    background-image: url('/img/icone/cacau.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 30px;
+    padding: 60px 20px;
+    
+    
+   
+}
+
+.inicio-conteudo {
+   
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto; 
+    color: white; 
+    text-align: center;
+    background-color: transparent;
+}
+
+
+.inicio-texto {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    font-weight: 300;
+    background-color: transparent;
+    
+}
+
+.inicio-destaques-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: transparent;
+}
+
+.destaque-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+     background-color: transparent;
+}
+
+.inicio-icons {
+    font-size: 4rem; 
+    color: #efefeaff;  
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+
+.p-texto {
+    font-size: 1rem;
+    margin: 0;
+     background-color: transparent;
+}

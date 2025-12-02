@@ -1,0 +1,29 @@
+*{ 
+    background-color: #E799A9;
+}
+
+
+.destaque-icon{
+    font-size: 2.0rem;
+    color: #181314ff;
+  
+}
+
+.conteiner{
+     display: flex;
+     gap: 100px;
+     margin: 0 auto;
+      text-align: center;
+      justify-content: center;
+      margin-bottom: 10px
+     
+
+}
+.texto{
+    font-size:15px;
+}
+.conteiner:hover {transition: transform 0.3s ease-in-out;
+    
+    transform: translateY(-5px); 
+   
+   }
