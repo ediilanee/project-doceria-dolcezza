@@ -52,7 +52,7 @@ const Cadastro = () => {
   };
 
   return (
-    <div>
+    <div className="fazerpedidos">
       <h2>Dolcezza</h2>
       <p>Preencha os dados abaixo para realizar sua compra</p>
 
