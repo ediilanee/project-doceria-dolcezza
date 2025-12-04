@@ -84,8 +84,15 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "doceria",
+        "HOST" : "localhost",
+        "USER": "postgres",
+        "PASSWORD" : "5115",
+        "PORT" : "5432",
+        "OPTIONS": {
+            'client_encoding': 'utf8',
+        }
     }
 }
 
