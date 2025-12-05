@@ -2,13 +2,14 @@ from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from app.models.cardapio import Cardapio
-from app.Serializer.CardapioSerializer import CardapioSerializer
+from app.Serializer.cardapio.CardapioSerializer import CardapioSerializer
 
 
 class InserirCardapio(APIView):
 
     def post(self , request):
         iduser = request.session.get('user_id')
+        
         if 'id_user' not in request.session:
             return Response({"mensagem":"Faça login antes de publicar"})
         dadosCardapio = CardapioSerializer(data=request.data)

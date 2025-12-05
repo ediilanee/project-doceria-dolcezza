@@ -7,7 +7,7 @@ import { LuCandy } from "react-icons/lu";
 const Inicio = () => {
   return (
     <div className="conteiner-inicio">
-      
+ 
       <div className="inicio-conteudo"> {/* Container para o texto e os destaques */}
         
         <p className="inicio-texto"> 

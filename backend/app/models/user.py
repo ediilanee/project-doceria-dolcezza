@@ -11,3 +11,13 @@ class Usuario(models.Model):
     bairro = models.CharField(max_length=256, null=False)
     numero = models.IntegerField(null=False)
     complemento = models.TextField(max_length=256, null=False)
+
+    @classmethod
+    def authenticate(cls, username, password):
+        try:
+            user = cls.objects.get(username=username)
+            if user.password == password:
+                return user
+        except cls.DoesNotExist:
+            return False
+        return None

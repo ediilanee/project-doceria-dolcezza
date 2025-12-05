@@ -1,7 +1,6 @@
 from django.db import models
 
 
-
 class Cardapio(models.Model):
     TIPO_CHOICES = [
         ('trufa', 'Trufa'),

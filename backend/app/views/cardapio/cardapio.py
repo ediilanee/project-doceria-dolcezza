@@ -2,11 +2,17 @@ from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from app.models.cardapio import Cardapio
-from app.Serializer.CardapioSerializer import CardapioSerializer
+from app.Serializer.cardapio.CardapioSerializer import CardapioSerializer
+from django_ratelimit.decorators import ratelimit
+
+
+# baixar limite de taxa = pip install django-ratelimit
 
 class CardapioViews(APIView):
     
-    def get(self):
+    #@ratelimit(key='ip', rate='10/m') # limita a 10 requisição por minutos
+
+    def get(self, request, *args, **kwargs):
         try:
             dadosBolos = Cardapio.objects.filter(tipo='bolo').all()
             dadosCupcakes = Cardapio.objects.filter(tipo='cupcake').all()

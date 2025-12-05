@@ -13,9 +13,7 @@ const Homescreen = () =>{
         <p>frete acima de R$250</p>
         <p>pedidos prontos ate 12h</p>
         <h1>dolcezza</h1>
-        
-        <Promocoes  />
-     
+        <Promocoes />
     </div>
   )  
   
